@@ -10,10 +10,10 @@ void main()
 	ptr = (char *)malloc(32);
 	memcpy(ptr,str, strlen(str));
 	puts(ptr);
-	memset(ptr+12,'1',1);
+	memset(ptr+12,'l',1);
 	puts(ptr);
 
-	p = (char *)memchr(ptr,'1',18);
+	p = (char *)memchr(ptr,'l',18);
 	puts(p);
 	memmove(str+12,str+7,10);
 	puts(str);
